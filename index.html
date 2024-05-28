@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Quiz Ganbu</title>
+</head>
+<body>
+    <div class="container">
+        <div class="question">
+            <p id="questionText">Aqui está a pergunta</p>
+        </div>
+        <div class="answer">
+            <button onclick="checkAnswer(0)">Opção 01</button>
+            <button onclick="checkAnswer(1)">Opção 02</button>
+            <button onclick="checkAnswer(2)">Opção 03</button>
+            <button onclick="checkAnswer(3)">Opção 04</button>
+        </div>
+        <div class="score">Pontuação: <span id="score">0</span></div>
+    </div>
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="resultText"></p>
+        </div>
+    </div>
+    <script src="/script/main.js"></script>
+</body>
+</html>
